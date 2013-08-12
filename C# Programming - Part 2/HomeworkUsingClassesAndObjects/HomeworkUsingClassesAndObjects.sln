@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. LeapYear", "01. LeapYear\01. LeapYear.csproj", "{0168FE2F-FA84-4296-8BA8-098CC99F0E0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. RandomValuesBetween100And200", "02. RandomValuesBetween100And200\02. RandomValuesBetween100And200.csproj", "{36677981-65F0-4F00-8DBE-37784D1DC3B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. TodaysDayOfWeek", "03. TodaysDayOfWeek\03. TodaysDayOfWeek.csproj", "{2BCB622D-2B17-4DEF-A070-5DFDB6BD4AE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. SurfaceOfATriangle", "04. SurfaceOfATriangle\04. SurfaceOfATriangle.csproj", "{764CBD6D-E603-4B3D-B67E-5EC4C2247FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. NumberOfWorkdays", "05. NumberOfWorkdays\05. NumberOfWorkdays.csproj", "{7737419B-8BCC-4105-8C84-D63A09DD8493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. CalculateSumOfValuesFromString", "06. CalculateSumOfValuesFromString\06. CalculateSumOfValuesFromString.csproj", "{5A6BC5D3-4BF9-4E67-A3D8-8E73508293AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. ArithmeticalExpressionCalculation", "07. ArithmeticalExpressionCalculation\07. ArithmeticalExpressionCalculation.csproj", "{401AA431-FD58-4326-92B5-6A46E70E043A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0168FE2F-FA84-4296-8BA8-098CC99F0E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0168FE2F-FA84-4296-8BA8-098CC99F0E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0168FE2F-FA84-4296-8BA8-098CC99F0E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0168FE2F-FA84-4296-8BA8-098CC99F0E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36677981-65F0-4F00-8DBE-37784D1DC3B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36677981-65F0-4F00-8DBE-37784D1DC3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36677981-65F0-4F00-8DBE-37784D1DC3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36677981-65F0-4F00-8DBE-37784D1DC3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BCB622D-2B17-4DEF-A070-5DFDB6BD4AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BCB622D-2B17-4DEF-A070-5DFDB6BD4AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BCB622D-2B17-4DEF-A070-5DFDB6BD4AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BCB622D-2B17-4DEF-A070-5DFDB6BD4AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764CBD6D-E603-4B3D-B67E-5EC4C2247FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764CBD6D-E603-4B3D-B67E-5EC4C2247FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764CBD6D-E603-4B3D-B67E-5EC4C2247FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764CBD6D-E603-4B3D-B67E-5EC4C2247FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7737419B-8BCC-4105-8C84-D63A09DD8493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7737419B-8BCC-4105-8C84-D63A09DD8493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7737419B-8BCC-4105-8C84-D63A09DD8493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7737419B-8BCC-4105-8C84-D63A09DD8493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A6BC5D3-4BF9-4E67-A3D8-8E73508293AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6BC5D3-4BF9-4E67-A3D8-8E73508293AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6BC5D3-4BF9-4E67-A3D8-8E73508293AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6BC5D3-4BF9-4E67-A3D8-8E73508293AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{401AA431-FD58-4326-92B5-6A46E70E043A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{401AA431-FD58-4326-92B5-6A46E70E043A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{401AA431-FD58-4326-92B5-6A46E70E043A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{401AA431-FD58-4326-92B5-6A46E70E043A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
