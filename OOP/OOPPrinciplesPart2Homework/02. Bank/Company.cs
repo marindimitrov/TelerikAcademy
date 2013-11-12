@@ -10,7 +10,7 @@ namespace Bank
         public Company()
         {
 
-        }
+        } 
         public Company(string name)
         {
             this.Name = name;
