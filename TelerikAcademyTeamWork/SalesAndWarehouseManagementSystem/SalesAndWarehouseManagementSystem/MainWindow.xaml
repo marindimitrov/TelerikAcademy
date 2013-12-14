@@ -1,0 +1,209 @@
+﻿<Window x:Class="SalesAndWarehouseManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="525" Width="700">
+    <Grid Height="495" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="53*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="92*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="46*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="84*"/>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="133*"/>
+        </Grid.ColumnDefinitions>
+
+        <RadioButton Content="In description" 
+                     x:Name="searchInDescriptionRadioButton" 
+                     GroupName="searchRadioButtons" 
+                     Padding=" 0 0 10 0" 
+                     Margin="5,4,10,37"
+                     Grid.Column="2" 
+                     RenderTransformOrigin="0.513,0.934" 
+                     Grid.ColumnSpan="2" />
+        <RadioButton Content="By model" 
+                     x:Name="searchByModelRadioButton" 
+                     GroupName="searchRadioButtons" 
+                     Padding=" 0 0 10 0" 
+                     Margin="40,4,10,37" 
+                     Grid.Column="3" 
+                     Grid.ColumnSpan="3" Height="27" VerticalAlignment="Bottom"/>
+        <RadioButton Content="by year" 
+                     x:Name="SearchByYearRadioButton" 
+                     GroupName="searchRadioButtons" 
+                     Padding=" 0 0 10 0" 
+                     Margin="5,4,10,37" 
+                     Grid.Column="1"/>
+        <TextBox Name="searchTextBox" 
+                 Text="Enter search text here" 
+                 Margin="10,31,10,0" 
+                 Grid.ColumnSpan="5" 
+                 Grid.Column="1" />
+        <Button Name="startSearchButton" 
+                Margin="10,15,10,15"
+                Content="Search" 
+                Grid.Column="6" 
+                Click="startSearchButton_Click" 
+                Grid.Row="9"/>
+        <ListBox Name="merchandiseListBox" 
+                 Margin="0,0,5,2" 
+                 Grid.RowSpan="11" 
+                 SelectionChanged="merchandiseListBox_SelectionChanged"></ListBox>
+        <ComboBox Name="merchandiceTypeSelectionBox" 
+                  Margin="5,10,6,5" 
+                  Grid.Column="1" 
+                  Grid.Row="2" 
+                  Grid.ColumnSpan="5" 
+                  SelectionChanged="merchandiceTypeSelectionBox_SelectionChanged" Grid.RowSpan="2">
+            <ComboBoxItem Name="all"
+                          Content="All">
+            </ComboBoxItem>
+            <ComboBoxItem Name="desctopComputer" 
+                          Content="Desktop computer">
+            </ComboBoxItem>
+            <ComboBoxItem Name="mobilePhone"
+                          Content="Mobile Phone">
+            </ComboBoxItem>
+        </ComboBox>
+        <Button Name="inStockRadioButton"
+                  Content="Only in stock" 
+                  Grid.Column="6" 
+                  Margin="10" 
+                  Grid.Row="2" Click="inStockRadioButton_Click" Grid.RowSpan="2"/>
+        <Button Name="resetMerchendiseListBox"
+                Content="Reset list"
+                Grid.Row="11"
+                Margin="5,0,5,10"
+                Click="resetMerchendiseListBox_Click"/>
+        <Button Name="addRestockProductButton"
+                Content="Restock product"
+                Grid.Column="1"
+                Grid.Row="11"
+                Click="RestockProductButton_Click"
+                Margin="5,0,5,10"
+                Grid.ColumnSpan="2"/>
+        <Button Name="sellSelectedProductButton" 
+                Content="Sell selected product" 
+                Grid.Column="3" Grid.Row="11"
+                Margin="5,0,5,10" 
+                Grid.ColumnSpan="3" Click="sellSelectedProductButton_Click"/>
+        <Button Name="inspectSelectedProduct"
+                
+                Content="Inspect Product"
+                Grid.Column="6"
+                Grid.Row="10"
+                Grid.RowSpan="2"
+                Margin="10,0,10,10"  Click="inspectSelectedProduct_Click"/>
+        <!--All types of merchandise should have such a group box that is hidden by default-->
+        <GroupBox Grid.ColumnSpan="5"
+                  Name="ComputingComponentsGroupBox"
+                  Grid.Column="1"
+                  Margin="5,10,6,5"
+                  Grid.Row="5"
+                  Grid.RowSpan="6"
+                  Visibility="Hidden">
+            <GroupBox.Header>
+                Desktop computer search
+            </GroupBox.Header>
+            <StackPanel Margin="2,0,-2,0" >
+                <Grid Height="191">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="178*"/>
+                        <ColumnDefinition Width="93*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="40*"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="minimalCpuFecqalcyLabel" 
+                           Content="Minimum frequency(in GH):" 
+                           Margin="0,0,10,10"
+                           />
+                    <TextBox  x:Name="minimalCpuFrequencyTextBox"
+                              Margin="0 10 0 10"
+                              Grid.Column="1"  />
+                    <Label x:Name="minimalHDDCapacityLabel"
+                           Content="Minimum HDD space:"
+                           Grid.Row="1"
+                           />
+                    <TextBox  x:Name="minimalHDDCapacityTextBox"
+                              RenderTransformOrigin="0.5,0.5"
+                              Margin="0 10 0 10" 
+                              Grid.Column="1"
+                              Grid.Row="1"  />
+                    <Label x:Name="minimalRAMapacityLabel" 
+                           Content="Minimum RAM amount:"
+                           Grid.Row="2" 
+                           Grid.RowSpan="2"
+                           />
+                    <TextBox  x:Name="minimalRAMCapacityTextBox"
+                              RenderTransformOrigin="0.5,0.5"
+                              Margin="0 10 0 10" 
+                              Grid.Column="1"
+                              Grid.Row="2"  />
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <Label Content="Price from: "
+               Grid.Column="1"
+               Margin="5,5,10,5"
+               Grid.Row="4"/>
+        <TextBox Name="minimumPriceTextBox"
+                 Text=""
+                 Grid.Column="2"
+                 Margin="0,5,10,5"
+                 Grid.Row="4"/>
+        <TextBox Name="maximumPriceTextBox" 
+                 Text="" 
+                 Grid.Column="4" 
+                 Margin="0,5,10,5"
+                 Grid.Row="4" Grid.ColumnSpan="2"/>
+        <Label Content="to"
+               Grid.Column="3"
+               Margin="5,5,10,5"
+               Grid.Row="4"/>
+        <Button Name="filterModelList"
+                Content="Filter"
+                Grid.Column="6"
+                Grid.Row="0"
+                Margin="10,30,10,2" Click="filterModelList_Click"/>
+        <Button Name="removeElementButton"
+                Content="Remove item"
+                Grid.Column="6"
+                Margin="10,0,10,1"
+                Grid.Row="8" />
+        <Button Name="addElementButton" 
+                Content="Add item" 
+                Grid.Column="6"
+                Margin="10,1,10,0"
+                Grid.Row="7"
+                Click="addElementButton_Click" />
+        <Button Name="loadDataButton"
+                Content="Load data file" 
+                Grid.Column="6" 
+                Margin="10,1,10,19" 
+                Grid.Row="6" />
+        <Button Name="saveDataButton"
+                Content="Save data file"
+                Grid.Column="6" Margin="10,1,10,52" 
+                Grid.Row="5" 
+                Grid.RowSpan="2"
+                Click="saveDataButton_Click" />
+    </Grid>
+</Window>
