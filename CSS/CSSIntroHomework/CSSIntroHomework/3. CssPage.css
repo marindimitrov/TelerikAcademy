@@ -1,0 +1,47 @@
+﻿body {
+    background-color: #a9a9a9;
+}
+
+h1 {
+    color: #fafad2;
+    font-size: xx-large;
+}
+
+body > header > h1 {
+    font-size: 1.5cm;
+}
+
+body > footer {
+    font-size: larger;
+}
+
+body > header > h1, body > footer {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: xx-large;
+}
+
+article > p {
+    font-size: larger;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li {
+    color: #ffffff;
+}
+
+ul li:nth-child(2) a {
+    background-color: #d3d3d3;
+}
+
+ul li:nth-child(4) {
+    text-decoration: underline;
+}

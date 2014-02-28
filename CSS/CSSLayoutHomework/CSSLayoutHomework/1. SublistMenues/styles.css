@@ -1,0 +1,23 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+}
+
+    ul li:hover:first-line {
+        text-decoration: underline;
+        display: block;
+    }
+
+        ul > li:hover > ul {
+            visibility: visible;
+            position: relative;
+        }
+
+    ul li ul {
+        visibility: hidden;
+    }

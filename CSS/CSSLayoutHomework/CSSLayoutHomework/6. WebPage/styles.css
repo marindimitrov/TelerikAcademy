@@ -1,0 +1,114 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Verdana;
+    color: white;
+}
+
+    body > div {
+        margin: 5px;
+        position: initial;
+        border: 2px solid #337d8f;
+        background-color: #1e3741;
+        min-width: 800px;
+        min-height: 600px;
+        border-radius: 8px;
+    }
+
+        body > div > ul {
+            margin-top: 15px;
+            margin-left: 5px;
+            min-width: 900px;
+        }
+
+            body > div > ul > li {
+                display: inline;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin-right: 2px;
+            }
+
+ul li img {
+    visibility: hidden;
+    position: absolute;
+    width: 350px;
+}
+
+ul li:hover > img {
+    visibility: visible;
+    position: absolute;
+    left: 270px;
+    top: 0;
+}
+
+ul > li > img:hover {
+    visibility: visible;
+}
+
+body > div > ul li:hover {
+    background-color: #00968c;
+    color: white;
+    position: relative;
+}
+
+body > div > ul > li:hover {
+    text-decoration: underline;
+    background-color: #1e3741;
+    color: white;
+}
+
+#firstOne {
+    border-top-left-radius: 5px;
+}
+
+#lastOne {
+    border-top-right-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: #4b5f67;
+    color: #819ba3;
+    margin: 0;
+    padding: 0;
+}
+
+    li > ul {
+        visibility: hidden;
+        display: inline-block;
+        position: absolute;
+    }
+
+    li:hover ul {
+        visibility: visible;
+        display: inline-block;
+        margin-top: 29px;
+        margin-left: 0;
+        padding-left: 0;
+        left: 1px;
+    }
+
+    li ul li {
+        background-color: #1e3741;
+        border-bottom: 1px solid grey;
+        width: 250px;
+    }
+
+    li:hover ul li {
+        margin-left: 0;
+        padding: 10px;
+        position: relative;
+    }
+
+    li:hover {
+        color: white;
+    }

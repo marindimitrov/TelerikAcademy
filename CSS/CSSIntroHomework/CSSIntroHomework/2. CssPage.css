@@ -1,0 +1,36 @@
+﻿html {
+    font-family: Calibri;
+}
+
+table {
+    border-collapse: collapse;
+    border-color: #c3c1b0;
+}
+
+tr th {
+    background-color: #56b906;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ececd8;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+img {
+    height: 16px;
+}
+
+th {
+    padding: 5px;
+    font-weight: lighter;
+    text-align: left;
+}
+
+td {
+    padding: 5px;
+    padding-right: 30px;
+}

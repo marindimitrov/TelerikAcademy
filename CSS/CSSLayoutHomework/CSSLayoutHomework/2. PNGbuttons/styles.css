@@ -1,0 +1,73 @@
+﻿body {
+    font-family: Calibri;
+}
+
+section {
+    border: 1px solid #808080;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+
+header {
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: #ffffff;
+    border: 1px solid #808080;
+    min-height: 110px;
+    width: 500px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.articleImage {
+    height: 110px;
+    float: left;
+    padding-right: 15px;
+}
+
+article > div {
+    height: 110px;
+}
+
+.buttons {
+    position: relative;
+}
+
+.buttonListenImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 30px;
+    width: 100px;
+    padding-right: 73px;
+}
+
+.buttonAddImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-height: 30px;
+}
+
+.textListen {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 95px;
+    z-index: 1;
+}
+
+.textAdd {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    z-index: 1;
+}

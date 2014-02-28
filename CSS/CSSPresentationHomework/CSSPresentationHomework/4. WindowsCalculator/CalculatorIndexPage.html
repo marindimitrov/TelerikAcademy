@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="CalculatorStyles.css" />
+</head>
+<body>
+    <div id="outerDIV">
+        <header>Calculator</header>
+        <section>
+            <nav>
+                <ul class="horizontal">
+                    <li>View</li>
+                    <li>Edit</li>
+                    <li>Help</li>
+                </ul>
+            </nav>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td colspan="10" id="inputField">0</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="10" id="hexField">
+                            <div>0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000</div>
+                            <div><span class="span1">63</span><span class="span2">47</span><span class="span3">32</span></div>
+                            <div>0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000&nbsp;&nbsp; 0000</div>
+                            <div><span class="span1">31</span><span class="span2">15</span><span class="span3">10</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="wider" rowspan="3" colspan="2">
+                            <ul>
+                                <li><input type="radio" name="numeral" />Hex</li>
+                                <li><input type="radio" name="numeral" />Dec</li>
+                                <li><input type="radio" name="numeral" />Oct</li>
+                                <li><input type="radio" name="numeral" />Bin</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td class="vertShBtn">Mod</td>
+                        <td class="bigFont">A</td>
+                        <td>MC</td>
+                        <td>MR</td>
+                        <td>MS</td>
+                        <td>M+</td>
+                        <td>M-</td>
+                    </tr>
+                    <tr>
+                        <td class="vertShBtn">(</td>
+                        <td class="vertShBtn">)</td>
+                        <td class="bigFont">B</td>
+                        <td class="vertShBtn"><img src="images/arrow.png" /></td>
+                        <td class="vertShBtn">CE</td>
+                        <td class="vertShBtn">C</td>
+                        <td class="vertShBtn">±</td>
+                        <td>&#8730;</td>
+                    </tr>
+                    <tr>
+                        <td class="vertShBtn">RoL</td>
+                        <td class="vertShBtn">RoR</td>
+                        <td class="bigFont">C</td>
+                        <td class="radShBtn">7</td>
+                        <td class="radShBtn">8</td>
+                        <td class="radShBtn">9</td>
+                        <td class="vertShBtn">/</td>
+                        <td>%</td>
+                    </tr>
+                    <tr>
+                        <td class="wider" rowspan="3" colspan="2">
+                            <ul>
+                                <li><input type="radio" name="bit" value="qword" />Qword</li>
+                                <li><input type="radio" name="bit" value="dword" />Dword</li>
+                                <li><input type="radio" name="bit" value="word" />Word</li>
+                                <li><input type="radio" name="bit" value="byte" />Byte</li>
+                            </ul>
+                        </td>
+                        <td class="vertShBtn">Or</td>
+                        <td class="vertShBtn">Xor</td>
+                        <td class="bigFont">D</td>
+                        <td class="radShBtn">4</td>
+                        <td class="radShBtn">5</td>
+                        <td class="radShBtn">6</td>
+                        <td class="vertShBtn">*</td>
+                        <td>1/<span id="mincho">χ</span></td>
+                    </tr>
+                    <tr>
+                        <td class="vertShBtn">Lsh</td>
+                        <td class="vertShBtn">Rsh</td>
+                        <td class="bigFont">E</td>
+                        <td class="radShBtn">1</td>
+                        <td class="radShBtn">2</td>
+                        <td class="radShBtn">3</td>
+                        <td class="vertShBtn">-</td>
+                        <td class="vertShBtn" rowspan="2"><img src="images/equally.png" /></td>
+                    </tr>
+                    <tr>
+                        <td class="vertShBtn">Not</td>
+                        <td class="vertShBtn">And</td>
+                        <td class="bigFont">F</td>
+                        <td class="radShBtn" colspan="2">0</td>
+                        <td>.</td>
+                        <td class="vertShBtn">+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>Created by me.<br />It looks better in Chrome.</footer>
+    </div>
+</body>
+</html>

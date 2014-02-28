@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Input form</title>
+
+    <style type="text/css">
+        td {
+            max-width: 560px;
+            padding: 3px;
+        }
+
+        .firstColumn {
+            text-align: right;
+            max-width: 150px;
+            font-weight: bold;
+            font-family: Calibri;
+        }
+
+        table {
+            border: outset;
+        }
+
+        tfoot {
+            background-color: aquamarine;
+            text-align: center;
+        }
+
+        input {
+            max-width: inherit;
+        }
+
+        .buttons {
+            border: outset;
+        }
+
+        textarea {
+            width: 530px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1">
+            <thead></thead>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><input type="submit" value="Submit" class="buttons" /><input type="reset" value="Clear this form" class="buttons" /></td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td class="firstColumn">Last Name</td>
+                    <td colspan="3"><input type="text" size="85" /></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">First Name</td>
+                    <td colspan="3"><input type="text" size="85" /></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">Address</td>
+                    <td colspan="3"><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">City</td>
+                    <td><input type="text" /></td>
+                    <td class="firstColumn">State</td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">Zip/Postal Code</td>
+                    <td colspan="3"><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">Country</td>
+                    <td colspan="3">
+                        <select name="country">
+                            <option>Bulgaria</option>
+                            <option>USA</option>
+                            <option>Germany</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">Phone (country code, area code, number)</td>
+                    <td colspan="3">(+<input type="text" />)<input type="text" />-<input type="text" /></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">E-mail</td>
+                    <td colspan="3"><input type="email" /></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">Birth date</td>
+                    <td colspan="3">Month<input type="text" /> Day<input type="text" /> Year(4 digit)<input type="text" /></td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">Gender</td>
+                    <td colspan="3">
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>N/A</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">Starting date</td>
+                    <td colspan="3">
+                        <input type="radio" name="starting date" id="springRadioButton" /><label for="springRadioButton">Spring 2013</label>
+                        <input type="radio" name="starting date" id="summerRadioButton" /><label for="summerRadioButton">Summer 2013</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="firstColumn">Comments/Questions</td>
+                    <td colspan="3"><textarea></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+
+    <style type="text/css">
+        .button {
+            width: 100%;
+        }
+
+        .result {
+            text-align: right;
+            width:96%
+        }
+
+        td {
+            width: 40px;
+        }
+
+        table, td {
+            border-color:blue;
+            border:groove
+        }
+    </style>
+
+    <table border="1" cellspacing="2" cellpadding="0">
+        <tbody align="center">
+            <tr>
+                <td colspan="4"><input type="text" name="result" value="123" alt="Result" class="result" /></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td><input type="button" value="+" class="button" /></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td><input type="button" value="-" class="button" /></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td><input type="button" value="*" class="button" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">0</td>
+                <td>.</td>
+                <td><input type="button" value="/" class="button" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
